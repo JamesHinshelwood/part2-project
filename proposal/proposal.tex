@@ -20,7 +20,7 @@ Implementing a dependently typed programming language\\[4mm]
 \large
 J.~Hinshelwood, Selwyn College
 
-Originator: [?]
+Originator:
 
 \today
 \end{center}
@@ -36,7 +36,6 @@ Originator: [?]
 % Main document
 
 \section*{Introduction}
-[Is this too long?]
 
 Dependent types are an extension to the type systems present in many programming languages.
 Systems with parametric polymorphism allow these types to be indexed by other types (e.g. \lstinline{List Bool}), meaning functions can be defined generically over an infinite range of types.
@@ -50,22 +49,20 @@ More expressive type systems also allow the compiler to reject a greater range o
 If a \lstinline{Matrix} type indexed by a width and height is used, the compiler can disallow matrix multiplication of matrices with improper dimensions.
 
 My project is to design and implement a language which uses a dependent type system.
-I will write a type checker and interpreter for the language in OCaml [?].
-To demonstrate the capabilities of dependent types, I will write some small examples which utilise the type system.
+I will write a type checker and interpreter for the language in OCaml.
+To demonstrate, I will write some examples which showcase the type system's capabilities.
 
 \section*{Starting point}
 
 Various dependently typed languages already exist.
 There are also a few papers on the topic, which I may refer to.
-[Do I need to be specific?]
 I will be writing my implementation in OCaml.
 I do not anticipate needing to use any additional libraries at this point.
 
 \section*{Resources required}
 
 For this project I will primarily use my own laptop to develop the implementation and to write the dissertation.
-I will use git to version control my work and make regular backups to a github repository.
-% I will make fortnightly backups to an external hard disk.
+I will use git to version control my work and make regular backups to a GitHub repository.
 I require no other special resources.
 
 \section*{Work to be done}
@@ -76,55 +73,59 @@ The project breaks down into the following sub-projects:
 
 \item Formalise the semantics of a dependently typed language, based on the dependently typed \(\lambda\)-calculus.
 
-\item Prove useful properties of the semantics, such as type safety. [?]
+\item Implement a type checker for the language.
 
-\item Implement an interpreter language in OCaml.
+\item Implement an interpreter or compiler for the language.
 
-\item Write examples of the uses of dependent types in the language.
+\item Write examples demonstrating the usefulness of dependent types.
 
 \end{enumerate}
 
-\section*{Success citeria}
+\section*{Success criteria}
 
-[I'm not sure what a good success criteria/evaluation metric would be?]
+The project will be a success if I have formalised the semantics of a dependently typed language, as well as having implemented a type checker and interpreter for the language.
 
 
 \section*{Possible extensions}
 
-[I need to discuss this with Dr Krishnaswami]
+If I achieve my success criteria early, I will try and add the following extensions to the language.
 
 \begin{itemize}
-	\item Add some form of type inference to the language.
-	\item Add more language features such as pattern matching.
-	\item Implement a compiler instead of an interpreter.
+	\item Datatype declarations
+	\item Pattern matching
+	\item Type inference
+	\item Implicit arguments
 \end{itemize}
+
+If some of these features get implemented, I will also spend more time writing and updating examples in the language.
+These will get easier to read as the language develops more features.
 
 
 \section*{Timetable}
 
-Planned starting date is 22/10/2018.
+The planned starting date is 22/10/2018.
 
 \begin{enumerate}
 
-\item \textbf{Michaelmas weeks 2--4} Read papers\ldots
+\item \textbf{Michaelmas weeks 2--4} Read papers.
 
 \item \textbf{Michaelmas weeks 5--6} Define formal semantics.
 
-\item \textbf{Michaelmas weeks 7--8} Start implementation of interpreter.
+\item \textbf{Michaelmas weeks 7--8} Start implementation of type checker.
 
-\item \textbf{Michaelmas vacation} Finish implementation.
+\item \textbf{Michaelmas vacation} Finish type checker and implement interpreter.
 
-\item \textbf{Lent weeks 0--2} Write progress report. Write examples.
+\item \textbf{Lent weeks 0--2} Finish interpreter and write progress report.
 
-\item \textbf{Lent weeks 3--5} Begin evaluation?
+\item \textbf{Lent weeks 3--5} Write examples in the language.
 
-\item \textbf{Lent weeks 6--8} \ldots
+\item \textbf{Lent weeks 6--8} Begin extensions.
 
-\item \textbf{Easter vacation:} Extensions and writing dissertation main chapters.
+\item \textbf{Easter vacation} Finish extensions and write dissertation main chapters.
 
-\item \textbf{Easter term 0--2:}  Complete dissertation.
+\item \textbf{Easter term 0--2}  Complete dissertation.
 
-\item \textbf{Easter term 3:} Proof reading and submission.
+\item \textbf{Easter term 3} Proof reading and submission.
 
 \end{enumerate}
 
